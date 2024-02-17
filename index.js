@@ -17,3 +17,8 @@ app.get('/hello', function (req, res) {
 app.listen(SERVER_PORT ,() => {
 	console.log(`Server Running at http://localhost:${SERVER_PORT}/`)	
 }) 
+
+
+app.get('/name', (req, res) => {
+  res.send('Hello Aishwinder!');
+});
